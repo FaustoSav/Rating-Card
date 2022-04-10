@@ -1,0 +1,228 @@
+@import 'normalizes';
+@import 'variables';
+@import 'mixins';
+
+html {
+    size: 62.5%;
+}
+
+body {
+    font-size: 15px;
+    background-color: $very-dark-blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+
+
+}
+
+.main {
+    max-width: 320px;
+    min-width: 240px;
+    padding: 20px;
+    background-color: $dark-blue;
+    background-color: rgba(37, 45, 55, 0.6);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+
+    .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .logo-container {
+        .star-img {
+            width: 14px;
+            background-color: hsla(216, 12%, 54%, 0.144);
+            padding: 9px;
+            border-radius: 50%;
+        }
+
+        .ty-img {
+            width: 130px;
+            margin-bottom: 20px;
+            padding-top: 10px;
+        }
+    }
+
+    .text-container {
+        width: 100%;
+
+        .h1 {
+            @include title;
+        }
+
+        .text {
+            @include text;
+        }
+
+        .second-h1 {
+            text-align: center;
+        }
+
+        .second-text {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+    }
+
+    .selected {
+        .selected-text {
+            color: $orange;
+            font-size: .8em;
+            background-color: $dark-blue;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-family: $font;
+            text-align: center;
+            display: inline;
+        }
+    }
+
+    .number-container {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        color: $light-grey;
+        text-align: center;
+
+        .number {
+            width: 35px;
+            height: 35px;
+            background-color: $dark-blue;
+            border-radius: 100%;
+            line-height: 35px;
+            font-family: $font;
+            font-size: .7em;
+            font-weight: 700;
+
+            &:hover {
+                color: $white;
+                background-color: $orange;
+                cursor: pointer;
+            }
+        }
+
+        .number-active {
+            color: $white;
+            background-color: $light-grey;
+        }
+    }
+
+    .submit-container {
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        .btn-submit {
+            width: 100%;
+            font-family: $font;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 20px;
+            border: none;
+            background-color: $orange;
+            color: $white;
+            text-transform: uppercase;
+            font-size: .8em;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            outline: none;
+
+            &:hover {
+                background-color: $white;
+                color: $orange;
+            }
+
+
+        }
+    }
+
+    .second {
+        display: none;
+    }
+
+    .first {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:1240px) {
+    .main{
+        max-width: 480px;
+        min-width: 340px;
+        border-radius: 35px;
+        padding: 30px 45px;
+
+
+        .logo-container{
+            .star-img{
+                width: 30px;
+                padding: 15px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            } 
+            .ty-img{
+                width: 170px;
+                padding-top: 35px;
+                margin-bottom: 40px;
+            }
+        }
+ 
+        .text-container{
+            .h1{
+                font-size: 1.6em;
+                
+            }
+            .text{
+                font-size: 1.1em;
+                line-height: 25px;
+                margin-top: 13px;
+                margin-bottom: 10px;
+            }
+            .second-text{
+                white-space: pre-line;
+            }
+        }
+        .selected{
+            .selected-text{
+                font-size: 1.2em;
+                margin-bottom: 20px;
+                padding: 10px 30px;
+                border-radius: 25px;
+            }
+        }
+
+        .number-container{
+            .number{
+                width: 55px;
+                height: 55px;
+                line-height: 55px;
+                font-size: 1.2em;
+            }
+        }
+
+        .submit-container{
+            .btn-submit{
+                padding-top: 15px;
+                padding-bottom: 15px;
+                font-size: 1.2em;
+            }
+        }
+
+    }
+    
+}
