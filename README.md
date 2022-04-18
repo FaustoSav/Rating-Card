@@ -3,7 +3,6 @@ Mentor Challenge.
 
 [DEMO](https://rating-faustosav.vercel.app/)
 
-![image](https://user-images.githubusercontent.com/84111811/163744247-365e0040-8517-44fb-922f-bd934786605b.png)
-![image](https://user-images.githubusercontent.com/84111811/163744255-4177f204-4fd1-4dda-9eb6-72ac55056d9d.png)
-
+![image](https://user-images.githubusercontent.com/84111811/163744338-f928e63c-7158-4af7-8eef-3ec31f1e38ff.png)
+![image](https://user-images.githubusercontent.com/84111811/163744321-3bf23028-4d4d-4e50-97d8-081388720ceb.png)
 
